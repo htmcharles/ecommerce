@@ -130,7 +130,10 @@ body{
     gap: 3rem;   
 }
 .product-info .overview .ratings{
-    text-align: ;  
+    text-align: center;  
+}
+.product-info .overview .ratings-description{
+    padding-top: 3rem;
 }
 /*===============================FOOTER==============================*/
 footer{
