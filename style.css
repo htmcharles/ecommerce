@@ -1,4 +1,187 @@
-sidebar{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-color-lightness:100%;
+    --color-primary-hue :252;
+    --color:#000;
+
+    --color-dark: hsl(252,30%,17%);
+    --color-white: hsl(252,30%,var(--bg-color-lightness));
+    --color-light: hsl(252,30%,95%);
+    --color-gray: hsl(252,15%,65%);
+    --color-primary: hsl(var(--color-primary-hue),73%,60%);
+    --color-secondary: hsl(252,100%,90%);
+    --color-success: hsl(120,95%,65%);
+    --color-danger: hsl(0,95%,65%);
+    --color-black: hsl(252,30%,10%);
+
+    --border-radius:2rem;
+    --card-border-radius :1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding:0.6rem 1rem;
+    --card-padding:1rem;
+
+    --sticky-top-left:5.4rem;
+    --sticky-top-right:-1rem;
+
+    --font:small;
+}
+/*===============================BODY INDEX==============================*/
+body{
+    font-family: "Poppins", sans-serif;
+    max-width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    max-width: 100%;
+    gap: 2rem;
+    padding-left:   3rem;
+    overflow: hidden;
+    position: relative;
+}
+.container .items{
+    display: flex;   
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+.container .item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.container .item img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container .item h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: in;
+}
+
+.container .item h4 {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+    display: block;
+}
+
+.container .item h6 {
+    font-size: 12px;
+    margin-left: 3px;
+    color: #999;
+    text-decoration: line-through; 
+    display: inline;
+}
+
+.container .item h5 {
+    font-weight: bold;
+    color: #333;
+    display: inline;
+}
+.container .left{
+    position: sticky;
+}
+/*===============================BODY PRODUCT========================*/
+.product-info h3,h4{
+    padding-left: 7rem;
+}
+.product-info h4,h6{
+    display: inline;
+}
+.product-info .product{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    gap: 0;
+}
+.product-info .product .img{
+    width: 50%;
+}
+.product-info .product .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+.product-info .product .details .add-to-court{
+    padding: 0.7rem;
+    background-color: #333;
+    border-radius: var(--card-border-radius);
+}
+.product-info .product .details .buy-now {
+    padding: 0.7rem;
+    background-color: #333;
+    border-radius: var(--card-border-radius);
+}
+.product-info .product .details .social{
+    text-align: center;
+}
+.product-info .overview{
+    display: grid;
+    grid-template-columns: 45% 15% 30%; 
+    gap: 3rem;   
+}
+.product-info .overview .ratings{
+    text-align: ;  
+}
+/*===============================FOOTER==============================*/
+footer{
     background: black;
     color: white;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 30px;
+    width: 100%;
+}
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+footer .links .spark-commerce{
+    width: 25%;
+}
+footer .links h6{
+    display: inline;
+}
+/* Style for the customer service section */
+.footer .links {
+    margin-bottom: 20px;
+}
+
+.footer .links h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .links i {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.footer .links h6 {
+    margin: 0;
+    font-size: 16px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+}
+h2,h6 {
+    top: 0;
+}
+.copyright{
+    margin: 5px;
+    text-align: center;
 }
